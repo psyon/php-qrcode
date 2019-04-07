@@ -2,6 +2,8 @@
 
 ### Generate QR Codes. MIT license.
 
+This is a stripped down version of https://github.com/kreativekorp/barcode
+
 Use from a PHP script:
 
 ```
