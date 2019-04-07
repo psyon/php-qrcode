@@ -27,11 +27,9 @@ DEALINGS IN THE SOFTWARE.
 \****************************************************************************/
 
 if (realpath(__FILE__) == realpath($_SERVER['SCRIPT_FILENAME'])) {
-	if (isset($_REQUEST['d'])) {
-		$generator = new QRCode($_REQUEST['d'], $_REQUEST);
-		$generator->output_image();
-		exit(0);
-	}
+	$generator = new QRCode($_REQUEST['d'], $_REQUEST);
+	$generator->output_image();
+	exit(0);
 }
 
 class QRCode {
