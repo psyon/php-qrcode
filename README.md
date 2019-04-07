@@ -33,7 +33,7 @@ qrcode.php?s=qr&d=HELLO%20WORLD&sf=8&ms=r&md=0.8
 ```
 
 #### Options:
-`s` - Symbology (type of barcode). One of:
+`s` - Symbology (type of QR code). One of:
 ```
     qr
     qr-l
@@ -48,13 +48,13 @@ qrcode.php?s=qr&d=HELLO%20WORLD&sf=8&ms=r&md=0.8
 
 `h` - Height of image. Overrides `sf` or `sy`.
 
-`sf` - Scale factor. Default is 1 for linear barcodes or 4 for matrix barcodes.
+`sf` - Scale factor. Default is 4.
 
 `sx` - Horizontal scale factor. Overrides `sf`.
 
 `sy` - Vertical scale factor. Overrides `sf`.
 
-`p` - Padding. Default is 10 for linear barcodes or 0 for matrix barcodes.
+`p` - Padding. Default is 0.
 
 `pv` - Top and bottom padding. Default is value of `p`.
 
@@ -72,7 +72,7 @@ qrcode.php?s=qr&d=HELLO%20WORLD&sf=8&ms=r&md=0.8
 
 `fc` - Foreground color in `#RRGGBB` format.
 
-`md` - Module density. A number between 0 and 1. Default is 1. Applies to matrix barcodes only.
+`md` - Module density. A number between 0 and 1. Default is 1.
 
 `wq` - Width of quiet area units. Default is 1. Use 0 to suppress quiet area.
 
