@@ -36,7 +36,7 @@ class QRCode {
 	private $data;
 	private $options;
 
-	public function __construct($data, $options) {
+	public function __construct($data, $options = []) {
 		$this->data    = $data;
 		$this->options = $options;
 	}
@@ -101,7 +101,7 @@ class QRCode {
 	private function encode_and_calculate_size($data, $options) {
 		$code = $this->dispatch_encode($data, $options);
 		$widths = array(
-			(isset($options['wq']) ? (int)$options['wq'] : 1),
+			(isset($options['wq']) ? (float)$options['wq'] : 1),
 			(isset($options['wm']) ? (int)$options['wm'] : 1),
 		);
 
