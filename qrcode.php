@@ -36,9 +36,15 @@ class QRCode {
 	private $data;
 	private $options;
 
-	public function __construct($data, $options) {
+	public function __construct($data, $options = []) {
+		$defaults = [
+			's' => 'qrl'
+		];
+
+		if(!is_array($options)) $options = [];
+
 		$this->data    = $data;
-		$this->options = $options;
+		$this->options = array_merge($defaults, $options);
 	}
 
 	public function output_image() {
